@@ -1,0 +1,15 @@
+.footer {
+	margin-left: 10vw;
+	margin-right: 10vw;
+	margin-bottom: 8em;
+	
+	transition: transform .25s;
+	-moz-transition: transform .25s;
+	-webkit-transition: transform .25s;
+}
+
+.footer__link {
+	font-size: .75em;
+	color: #616161;
+	color: var(--normal-color-text);
+}

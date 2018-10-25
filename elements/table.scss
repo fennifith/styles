@@ -1,0 +1,28 @@
+.table {
+	display: inline-block;
+	max-width: 100%;
+	overflow-x: auto;
+	border-collapse: collapse;
+	border: 1px solid #BDBDBD;
+	border: 1px solid var(--normal-outline);
+}
+
+.table__head {
+	background: #BDBDBD;
+	background: var(--normal-outline);
+}
+
+.table__column {
+	padding: 0.5em 1em;
+	text-align: left;
+	word-break: normal;
+}
+
+.table__row {
+	border-bottom: 1px solid #BDBDBD;
+	border-bottom: 1px solid var(--normal-outline);
+}
+
+.table__row:last-child {
+	border-bottom: none;
+}
