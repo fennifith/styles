@@ -1,4 +1,4 @@
-.table {
+table {
 	display: inline-block;
 	max-width: 100%;
 	overflow-x: auto;
@@ -7,22 +7,22 @@
 	border: 1px solid var(--normal-outline);
 }
 
-.table__head {
+thead {
 	background: #BDBDBD;
 	background: var(--normal-outline);
 }
 
-.table__column {
+th, td {
 	padding: 0.5em 1em;
 	text-align: left;
 	word-break: normal;
 }
 
-.table__row {
+tr {
 	border-bottom: 1px solid #BDBDBD;
 	border-bottom: 1px solid var(--normal-outline);
 }
 
-.table__row:last-child {
+tr:last-child {
 	border-bottom: none;
 }
