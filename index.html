@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<sidebar class="sidebar">
+	
+</sidebar>
+
+<main>
+	<h2>Styles</h2>
+	<p>
+		This page contains documentation and examples of all of the CSS styles used throughout
+		<a href="https://jfenn.me/">my site</a>.
+	</p>
+	{% for element in site.elements %}
+	<a href="{{ element.url }}">{{ element.title }}</a>
+	<div class="desktop">
+		{{ element.content }}
+	</div>
+	{% endfor %}
+</main>

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<main>
+	<h2>{{ page.title }}</h2>
+	<a class="link" href="{{ site.giturl }}/blob/css/{{ page.file }}">
+		<i class="link__img material-icons">code</i>
+		<span class="link__title">View Source</span>
+	</a>
+	<pre><code>
+		{{ page.content | xml_escape | strip }}
+	</code></pre>
+	<div>
+		{{ page.content }}
+	</div>
+</main>

@@ -2,9 +2,12 @@ name: "Styleguide - James Fenn"
 description: "James Fenn's personal styleguide"
 url: https://jfenn.me/styles
 baseurl: "/"
+giturl: "https://jfenn.me/redirects/?t=github&d=styles"
 
 collections:
     elements:
+        output: true
+    categories:
         output: true
 
 exclude:
