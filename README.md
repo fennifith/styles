@@ -6,4 +6,4 @@ At the suggestion of a friend, I have decided to adopt the [Block Element Modifi
 
 ## Documentation
 
-I am currently working on documenting all of the existing styles, as well as enforcing some kind of consistency between class names. When it is complete, the full documentation (and sample elements) will be available at [jfenn.me/styles](https://jfenn.me/styles/).
+I am currently working on documenting all of the existing styles, as well as enforcing some kind of consistency between class names. The current documentation (and examples) are available at [jfenn.me/styles](https://jfenn.me/styles/). As I am generally lazy at documenting things, some of the text and explanations are crude and not very well written. I hope to improve on this in the future, but until then it serves its general purpose.
