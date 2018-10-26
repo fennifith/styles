@@ -20,7 +20,7 @@ layout: default
 	</p>
 	<h2>Categories</h2>
 	{% for category in site.categories %}
-	<a class="item" href="{{ category.url }}">
+	<a class="item" href="{{ site.baseurl }}{{ category.id }}">
 		<span class="item__title">{{ category.title }}</span>
 		{{ category.content }}
 	</a>

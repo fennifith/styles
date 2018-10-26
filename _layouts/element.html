@@ -7,12 +7,12 @@ layout: default
 <main>
 	{% if page.category %}
 	{% assign category = site.categories | where: "title", page.category | first %}
-	<a class="link" href="{{ category.url }}">
+	<a class="link" href="{{ site.baseurl }}{{ category.id }}">
 		<img class="link__img" src="/images/ic/back.svg">
 		<span class="link__title">"{{ page.category }}" Category</span>
 	</a>
 	{% else %}
-	<a class="link" href="../../">
+	<a class="link" href="{{ site.baseurl }}">
 		<img class="link__img" src="/images/ic/back.svg">
 		<span class="link__title">Back</span>
 	</a>

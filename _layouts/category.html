@@ -5,7 +5,7 @@ layout: default
 {% include sidebar.html %}
 
 <main>
-	<a class="link" href="../../">
+	<a class="link" href="{{ site.baseurl }}">
 		<img class="link__img" src="/images/ic/back.svg">
 		<span class="link__title">Back</span>
 	</a><br>
@@ -15,7 +15,7 @@ layout: default
 	{% assign elements = site.elements | where: "category", page.title %}
 	<div>
 		{% for element in elements %}
-		<a class="item" href="{{ element.url }}">
+		<a class="item" href="{{ site.baseurl }}{{ element.id }}">
 			<span class="item__title">{{ element.title }}</span>
 			{{ element.description }}
 		</a>
