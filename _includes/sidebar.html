@@ -12,5 +12,10 @@
 			</ul>
 		</li>
 		{% endfor %}
+
+		{% assign elements = site.elements | where_exp: "item", "item.category == nil" %}
+		{% for element in elements %}
+			<li><a href="{{ element.url }}">{{ element.title }}</a></li>
+		{% endfor %}
 	</ul>
 </sidebar>
