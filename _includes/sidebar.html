@@ -1,0 +1,16 @@
+<sidebar class="sidebar">
+	<h2>Index</h2>
+	<ul>
+		{% for category in site.categories %}
+		<li>
+			<a href="{{ category.url }}">{{ category.title }}</a>
+			<ul>
+				{% assign elements = site.elements | where: "category", category.title %}
+				{% for element in elements %}
+				<li><a href="{{ element.url }}">{{ element.title }}</a></li>
+				{% endfor %}
+			</ul>
+		</li>
+		{% endfor %}
+	</ul>
+</sidebar>

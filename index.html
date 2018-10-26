@@ -2,20 +2,26 @@
 layout: default
 ---
 
-<sidebar class="sidebar">
-	
-</sidebar>
+{% include sidebar.html %}
 
 <main>
-	<h2>Styles</h2>
+	<h1>Styles</h1>
 	<p>
-		This page contains documentation and examples of all of the CSS styles used throughout
-		<a href="https://jfenn.me/">my site</a>.
+		This page contains documentation and examples of all of the CSS styles used 
+		throughout <a href="https://jfenn.me/">my site</a>.
 	</p>
-	{% for element in site.elements %}
-	<a href="{{ element.url }}">{{ element.title }}</a>
-	<div class="desktop">
-		{{ element.content }}
-	</div>
+	<p>
+		Much of the guidelines in this styleguide are based on Google's
+		<a href="https://material.io/design/foundation-overview/">Material Foundation</a>,
+		and have been adapted for my own use. As this documentation is intended for
+		function over form, it lacks a lot of the fine specification included with the
+		material components.
+	</p>
+	<h2>Categories</h2>
+	{% for category in site.categories %}
+	<a class="item" href="{{ category.url }}">
+		<span class="item__title">{{ category.title }}</span>
+		{{ category.content }}
+	</a>
 	{% endfor %}
 </main>

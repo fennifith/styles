@@ -29,3 +29,6 @@
 <link href="//fonts.googleapis.com/css?family=Miriam+Libre" rel="stylesheet">
 <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="/css/styles.css" rel="stylesheet">
+
+{% assign languages = "html|css" | split: "|" %}
+{% include head-highlightjs.html languages=languages %}
