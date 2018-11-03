@@ -30,6 +30,13 @@
 	color: var(--accent-inverse) !important;
 	box-shadow: 0 0.4em 1.2em rgba(0, 72, 117, 0.37);
 	box-shadow: 0 0.4em 1.2em var(--accent-outline-fade);
+	
+}
+
+.button:focus {
+	font-weight: bold;
+	background-color: rgba(0, 72, 117, 0.5);
+	background-color: var(--accent-color-text);
 }
 
 .button--selectable:hover {

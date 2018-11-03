@@ -88,6 +88,7 @@ p {
 
 a {
 	cursor: pointer;
+	outline: none;
 	color: #0091EA;
 	color: var(--accent-color-text);
 	transition: color .25s;
@@ -95,9 +96,14 @@ a {
 	-webkit-transition: color .25s;
 }
 
-a:hover {
+a:hover, a:focus {
 	color: #000000;
 	color: var(--normal-color-focus);
+}
+
+a:focus {
+	text-decoration-color: transparent;
+	font-weight: bold;
 }
 
 .material-icons.--focusable {

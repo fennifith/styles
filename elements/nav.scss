@@ -14,14 +14,14 @@
 
 .nav__item {
 	border: none;
-	outline: none;
+	outline: 1px solid transparent;
 	user-select: none;
 	cursor: pointer;
 	padding: 0.75em 1.25em;
 
-	transition: box-shadow .25s, background-color .25s, color .25s;
-	-moz-transition: box-shadow .25s, background-color .25s, color .25s;
-	-webkit-transition: box-shadow .25s, background-color .25s, color .25s;
+	transition: box-shadow .25s, background-color .25s, outline-color .25s, color .25s;
+	-moz-transition: box-shadow .25s, background-color .25s, outline-color .25s, color .25s;
+	-webkit-transition: box-shadow .25s, background-color .25s, outline-color .25s, color .25s;
 
 	background-color: rgba(255, 255, 255, 0);
 	box-shadow: none;
@@ -45,7 +45,12 @@
 	box-shadow: 0 0.1em 0.3em var(--accent-outline-fade);
 }
 
+.nav__item:focus {
+	outline-color: currentColor;
+}
+
 .nav__item[selected] {
+	outline-color: transparent;
 	background-color: #0091EA;
 	background-color: var(--accent-background);
 	color: #FFF !important;
