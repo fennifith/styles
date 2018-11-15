@@ -23,7 +23,9 @@
 	-webkit-transition: color .25s;
 }
 
-.item:hover, .item:focus .item__title {
+.item:hover, .item:focus,
+.item:hover .item__title,
+.item:focus .item__title {
 	color: #000;
 	color: var(--normal-color-focus);
 }
