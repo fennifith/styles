@@ -13,3 +13,9 @@
 	color: #616161;
 	color: var(--normal-color-text);
 }
+
+@media (min-width: 800px) {
+	.sidebar ~ .footer {
+		width: calc(70% - 20vw);
+	}
+}
