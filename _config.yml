@@ -1,6 +1,6 @@
 name: "Styleguide - James Fenn"
 description: "James Fenn's personal styleguide"
-url: https://jfenn.me/styles
+url: "/styles"
 baseurl: "/"
 giturl: "https://jfenn.me/redirects/?t=github&d=styles"
 
