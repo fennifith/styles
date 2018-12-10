@@ -35,8 +35,9 @@
 	align-content: baseline;
 	text-align: center;
 	padding: 1.5em 16px;
-	border: 2px solid #0091EA;
-	border: 2px solid var(--accent-color);
+	background-color: rgba(91, 162, 238, 0.3);
+	background-color: var(--accent-background-light);
+	border-radius: 10px;
 
 	transition: color .25s, background-color .25s, border-color .25s, box-shadow .25s;
 	-moz-transition: color .25s, background-color .25s, border-color .25s, box-shadow .25s;
@@ -58,8 +59,8 @@
 }
 
 .item--box:focus {
-	border-color: #000;
-	border-color: var(--normal-color-focus);
+	border: 1px solid #000;
+	border: 1px solid var(--normal-color-focus);
 }
 
 .item--img {
