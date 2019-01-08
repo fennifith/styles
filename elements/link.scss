@@ -7,7 +7,8 @@
 }
 
 .link__img,
-.link__img--round {
+.link__img--round,
+.link__img--color {
 	width: 24px;
 	height: 24px;
 	margin-right: 18px;
@@ -46,6 +47,10 @@
 .link:hover .link__img:not(.link__img--round) {
 	filter: contrast(0) brightness(0);
 	filter: contrast(0) brightness(var(--image-brightness-focus));
+}
+
+.link__img--color {
+	filter: none;
 }
 
 .link__title {
