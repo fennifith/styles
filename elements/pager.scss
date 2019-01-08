@@ -3,15 +3,14 @@
 	white-space: nowrap;
 	overflow-x: scroll;
 	overflow-y: hidden;
-	border-radius: 5px;
-	background-color: rgba(0, 0, 0, 0.1);
-	background-color: var(--normal-focus);
 }
 
 .pager__item {
-	height: 350px;
+	height: 347px;
 	width: auto;
 	margin: 0 8px;
+	border: 1px solid #000;
+	border: 1px solid var(--normal-outline-dark);
 }
 
 .pager__item:first-child {
