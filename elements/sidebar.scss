@@ -63,7 +63,7 @@
 		border-left: 1px solid var(--normal-outline);
 		border-bottom: none;
 		max-height: initial;
-		overflow-y: scroll;
+		overflow-y: auto;
 	}
 
 	.sidebar::before {
