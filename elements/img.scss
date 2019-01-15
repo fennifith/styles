@@ -29,3 +29,10 @@ img.img--round {
 	-moz-transition: max-height .25s;
 	-webkit-transition: max-height .25s;
 }
+
+@media(min-width: 1575px) {
+	.img__container--wide {
+		margin: 0 calc(630px - 50vw);
+		width: 100vw;
+	}
+}
