@@ -48,3 +48,18 @@ li > ul > li > a {
 li {
 	overflow: hidden;
 }
+
+@media(min-width: 1575px) {
+	ul > li {
+		margin: 0 calc(630px - 50vw);
+		width: 100vw;
+	}
+
+	ul > li > a {
+		padding: .5em calc(50vw - 630px);
+	}
+
+	main > ul > li > ul {
+		padding-left: calc(50vw - 630px);
+	}
+}

@@ -48,7 +48,8 @@
 }
 
 @media(min-width: 800px) {
-	.sidebar ~ main {
+	.sidebar ~ main,
+	.sidebar ~ .footer {
 		width: calc(70% - 20vw);
 	}
 	
@@ -70,4 +71,22 @@
 		display: none;
 	}
 	
+}
+
+@media(min-width: 1575px) {
+	.sidebar ~ main,
+	.sidebar ~ .footer {
+		width: calc(882px);
+	}
+}
+
+@media(min-width: 2800px) {
+	.sidebar ~ main,
+	.sidebar ~ .footer {
+		width: auto;
+	}
+
+	.sidebar {
+		width: calc(40vw - 650px);
+	}
 }

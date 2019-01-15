@@ -14,8 +14,9 @@
 	color: var(--normal-color-text);
 }
 
-@media (min-width: 800px) {
-	.sidebar ~ .footer {
-		width: calc(70% - 20vw);
+@media(min-width: 1575px) {
+	.footer {
+		margin-left: calc(50vw - 630px);
+		margin-right: calc(50vw - 630px);
 	}
 }

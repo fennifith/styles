@@ -163,3 +163,10 @@ main {
 		display: none;
 	}
 }
+
+@media(min-width: 1575px) {
+	main {
+		margin-left: calc(50vw - 630px);
+		margin-right: calc(50vw - 630px);
+	}
+}
