@@ -78,6 +78,10 @@
 	.sidebar ~ .footer {
 		width: calc(882px);
 	}
+
+	.sidebar {
+		width: calc(20% - 4em);
+	}
 }
 
 @media(min-width: 2800px) {
@@ -87,6 +91,14 @@
 	}
 
 	.sidebar {
-		width: calc(40vw - 650px);
+		width: 560px;
+		height: auto;
+		position: absolute;
+		top: 10em;
+		bottom: auto;
+		border: 1px solid #BDBDBD;
+		border: 1px solid var(--normal-outline);
+		border-radius: 10px;
+		right: calc(50vw - 1190px - 6em);
 	}
 }
