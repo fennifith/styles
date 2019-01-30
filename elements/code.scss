@@ -20,7 +20,11 @@ code {
 }
 
 a > code {
+	display: inline-block;
 	border-bottom: 1px solid currentColor;
+	text-decoration: none;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 pre > code {

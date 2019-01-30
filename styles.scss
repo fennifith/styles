@@ -92,11 +92,9 @@ p {
 a {
 	cursor: pointer;
 	outline: none;
-	text-decoration: none;
+	text-decoration: underline;
 	color: #0091EA;
 	color: var(--accent-color-text);
-	background-color: rgba(0, 72, 117, 0.1);
-	background-color: var(--accent-background-light);
 	transition: color .25s;
 	-moz-transition: color .25s;
 	-webkit-transition: color .25s;
