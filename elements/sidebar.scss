@@ -24,6 +24,11 @@
 	color: var(--normal-color-text);
 }
 
+.sidebar a {
+	background: none;
+	text-decoration: underline;
+}
+
 .sidebar::before {
 	content: '...';
 	display: block;

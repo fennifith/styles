@@ -23,6 +23,7 @@
 	--accent-color-text: #0067A4;
 	--accent-background-light: rgba(91, 162, 238, 0.3);
 	--accent-background: #0091EA;
+	--accent-background-light: rgba(0, 72, 117, 0.1);
 	--accent-outline: #0091EA;
 	--accent-outline-fade: rgba(0, 72, 117, 0.3);
 	--accent-outline-fade2: rgba(0, 72, 117, 0.5);
@@ -47,6 +48,7 @@
 	--accent-color: #09A3FF;
 	--accent-color-text: #58BDF9;
 	--accent-background: #2FA4E9;
+	--accent-background-light: rgba(0, 72, 117, 0.3);
 	--accent-outline: #09A3FF;
 	--accent-outline-fade: rgba(0, 72, 117, 0.3);
 	--accent-outline-fade2: rgba(0, 72, 117, 0.5);
@@ -90,8 +92,11 @@ p {
 a {
 	cursor: pointer;
 	outline: none;
+	text-decoration: none;
 	color: #0091EA;
 	color: var(--accent-color-text);
+	background-color: rgba(0, 72, 117, 0.1);
+	background-color: var(--accent-background-light);
 	transition: color .25s;
 	-moz-transition: color .25s;
 	-webkit-transition: color .25s;

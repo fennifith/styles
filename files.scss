@@ -6,6 +6,10 @@ ul {
 	padding: 0;
 }
 
+li > a {
+	background: none;
+}
+
 ul > li {
 	margin: 0 -10vw;
 	width: calc(100% + 20vw);
