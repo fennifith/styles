@@ -3,8 +3,11 @@ pre {
 	background-color: var(--normal-background-darker);
 	border: 1px solid #BDBDBD;
 	border: 1px solid var(--normal-outline);
+	border-radius: 5px;
 	overflow-x: auto;
 	padding: 16px;
+	box-shadow: 0 .4em 1.2em rgba(0, 0, 0, 0.1);
+	box-shadow: 0 .4em 1.2em var(--normal-focus);
 }
 
 code {
