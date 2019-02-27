@@ -57,10 +57,10 @@
 
 .nav__item[selected] {
 	border-color: transparent;
-    color: #0091EA !important;
-	color: var(--accent-background) !important;
+    color: #0067A4 !important;
+	color: var(--accent-color-text) !important;
 	width: 25%;
-	transform: translateY(-0.45em);
+	transform: translateY(-0.5em);
 	flex-grow: 2;
 }
 
