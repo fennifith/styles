@@ -7,7 +7,9 @@
 	z-index: 100;
 
 	background: #FFF;
+	background: var(--normal-background);
 	border-top: 1px solid #BDBDBD;
+	border-top: 1px solid var(--normal-outline);
 	height: 60px;
 	position: fixed;
 	bottom: 0;
