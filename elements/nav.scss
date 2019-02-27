@@ -2,15 +2,17 @@
 	width: 80% !important;
 	text-align: center;
 	display: block;
+	display: flex;
 	padding: 8px 10%;
 	overflow: hidden;
 	z-index: 100;
 
-	background: #FFF;
-	background: var(--normal-background);
+	background: #F5F5F5;
+	background: var(--normal-background-dark);
 	border-top: 1px solid #BDBDBD;
 	border-top: 1px solid var(--normal-outline);
-	height: 60px;
+	height: 48px;
+	height: calc(32px + 1em);
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -42,9 +44,10 @@
 	user-select: none;
 	white-space: nowrap;
 
-	height: 60px;
+	height: 100%;
 	width: 16%;
 	position: relative;
+	flex-grow: 1;
 }
 
 .nav__item:hover {
@@ -54,10 +57,11 @@
 
 .nav__item[selected] {
 	border-color: transparent;
-    color: #0091EA;
-	color: var(--accent-background);
+    color: #0091EA !important;
+	color: var(--accent-background) !important;
 	width: 25%;
-	transform: translateY(-0.5em);
+	transform: translateY(-0.45em);
+	flex-grow: 2;
 }
 
 .nav__item > * {
@@ -83,7 +87,7 @@
 }
 
 .nav__item[selected] > .nav__item__title {
-    font-size: 1em;
+    font-size: 0.9em;
     height: auto;
 }
 
@@ -91,6 +95,7 @@
     .nav {
         border: none;
         position: unset;
+        display: block;
         height: auto;
         background: none;
         overflow: visible;
@@ -139,7 +144,7 @@
 	}
 
 	.nav__item__title {
-	    font-size: 1em;
+	    font-size: 1em !important;
 	    height: auto;
 	    position: unset;
 	    transform: none;
