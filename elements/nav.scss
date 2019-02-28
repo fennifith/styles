@@ -30,9 +30,10 @@
 	cursor: pointer;
 	padding: 4px 8px;
 
-	transition: box-shadow .25s, background-color .25s, border-color .25s, color .25s, width .25s, transform .25s;
-	-moz-transition: box-shadow .25s, background-color .25s, border-color .25s, color .25s, width .25s, transform .25s;
-	-webkit-transition: box-shadow .25s, background-color .25s, border-color .25s, color .25s, width .25s, transform .25s;
+    will-change: color, transform;
+	transition: box-shadow .25s, background-color .25s, border-color .25s, color .25s, transform .25s;
+	-moz-transition: box-shadow .25s, background-color .25s, border-color .25s, color .25s, transform .25s;
+	-webkit-transition: box-shadow .25s, background-color .25s, border-color .25s, color .25s, transform .25s;
 
 	background-color: rgba(255, 255, 255, 0);
 	box-shadow: none;
@@ -45,7 +46,7 @@
 	white-space: nowrap;
 
 	height: 100%;
-	width: 16%;
+	width: 18%;
 	position: relative;
 	flex-grow: 1;
 }
@@ -56,12 +57,10 @@
 }
 
 .nav__item[selected] {
+    transform: translateY(-0.5em);
 	border-color: transparent;
     color: #0067A4 !important;
 	color: var(--accent-color-text) !important;
-	width: 25%;
-	transform: translateY(-0.5em);
-	flex-grow: 2;
 }
 
 .nav__item > * {
@@ -80,7 +79,8 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    
+
+    will-change: font-size;
     transition: font-size .25s;
     -moz-transition: font-size .25s;
     -webkit-transition: font-size .25s;
