@@ -11,6 +11,12 @@ img.img--round {
 	box-shadow: 0 0 1px 0px var(--normal-outline-dark), 0 0 1px 0px var(--normal-outline-dark);
 }
 
+img.img--profile {
+	border-radius: 50%;
+	box-shadow: 0 0.2em 1.2em rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0.2em 1.2em var(--normal-focus-dark);
+}
+
 .img__container {
 	display: flex;
 	align-items: center;
