@@ -170,6 +170,12 @@ main {
 	}
 }
 
+@media(max-width: 1000px) {
+    .--desktop-large {
+        display: none;
+    }
+}
+
 @media(min-width: 1575px) {
 	main {
 		margin-left: calc(50vw - 630px);
