@@ -4,12 +4,10 @@
 
 .markdown img {
 	border-radius: 5px;
-	box-shadow: 0 0.4em 1.2em rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0.4em 1.2em var(--normal-focus);
-	border: 1.5px solid #000000;
-	border: 1.5px solid var(--normal-color-focus);
-	background-color: #000000;
-	background-color: var(--normal-color-focus);
+	box-shadow: 0 0.2em 1.2em rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0.2em 1.2em var(--normal-focus-dark);
+	background-color: rgba(0, 0, 0, 0.3);
+	background-color: var(--normal-focus-dark);
 }
 
 .markdown a>img {
