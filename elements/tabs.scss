@@ -1,0 +1,7 @@
+.tabs > *:not(:target) {
+    display: none;
+}
+
+.tabs > *:target {
+    display: block;
+}
