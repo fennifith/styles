@@ -1,7 +1,9 @@
-.tabs > *:not(:target) {
+.tabs > div:target ~ div:last-child,
+.tabs > div {
     display: none;
 }
 
-.tabs > *:target {
+.tabs > :last-child,
+.tabs > div:target {
     display: block;
 }
