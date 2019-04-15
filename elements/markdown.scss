@@ -10,6 +10,10 @@
 	background-color: var(--normal-focus-dark);
 }
 
+.markdown p>img {
+    width: 100%;
+}
+
 .markdown a>img {
 	border-radius: 0;
 	box-shadow: none;
